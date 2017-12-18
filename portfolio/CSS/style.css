@@ -39,6 +39,7 @@ body{
 
 .skillFooterAnim{
   animation-delay: 2s;
+  padding-bottom: 10px;
 }
 
 .skill{
@@ -109,6 +110,10 @@ iframe{
 
 }
 
+.animDelayer{
+  animation-delay: 1s;
+}
+
 #dkimg{
   animation-delay: .25s;
 }
@@ -128,4 +133,14 @@ iframe{
 .titlerow{
   margin-top: 2.5%;
   margin-bottom: 2.5%;
+}
+
+@media(min-width:768px){
+  .titlerow{
+    height: 50%;
+  }
+}
+
+h1{
+  font-size: 24px;
 }
