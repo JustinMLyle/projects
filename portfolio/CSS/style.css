@@ -13,25 +13,29 @@ body{
 
 .centertitle {
   background-color: #ffffff;
+}
+
+.titlerow{
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+}
+
+h1{
+  font-size: 24px;
 }​
 
 .tester{
   background-color: red;
 }
 
-.hr{/*horizontal Line*/
-  border: 1px solid #55FFF3;
-  width: auto;
-}
-
 .skillRow{
   background-color: #A33633;
   color: #ffffff;
-  min-height: 250px;
+  min-height: 225px;
 }
 
 .skillFooter{
-  margin-bottom: 25px;
+  margin-bottom: 1%;
   text-align: center;
   background-color: #A33633;
   color: #ffffff;
@@ -60,13 +64,47 @@ body{
 .listanimator{
   animation-delay: 2s;
 }
-
 .wipiconTransform{
   height: 16px;
   width: 16px;
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.contentCards{
+  min-height: 350px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.u4ecard{
+  min-height: 350px;
+  max-height: 350px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.shortCard{
+  max-height: 350px;
+  max-width: 450px;
+}
+
+.reccHeader{
+  min-width: 100%;
+  padding-top: 5px;
+  background-color: #A33633;
+  color: #ffffff;
+}
+.reccs{
+  background-color: #A33633;
+  color: #ffffff;
+  min-height: 225px;
+}
+.reccIcons{
+  height: 50px;
+  width: 50px;
+}
+
 #designicon{
   display: block;
   margin: auto;
@@ -93,9 +131,20 @@ body{
 
 }
 
-iframe{
+#u4e.iframe{
   width:100%;
   min-height: 315px;
+  margin-bottom: 10px;
+}
+
+#tsto.iframe{
+  width:100%;
+  min-height: 315px;
+  margin-bottom: 10px;
+}
+
+#dk.iframe{
+  width:50%;
   margin-bottom: 10px;
 }
 
@@ -111,7 +160,7 @@ iframe{
 }
 
 .animDelayer{
-  animation-delay: 1s;
+  animation-delay: 6s;
 }
 
 #dkimg{
@@ -128,19 +177,4 @@ iframe{
 
 #shredimg{
   animation-delay: 1s;
-}
-
-.titlerow{
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-}
-
-@media(min-width:768px){
-  .titlerow{
-    height: 50%;
-  }
-}
-
-h1{
-  font-size: 24px;
 }
