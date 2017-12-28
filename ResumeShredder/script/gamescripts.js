@@ -71,7 +71,7 @@ $(document).ready(function(){
 
 //Document Destruction shredderSolutions
 $("#shredderSM").click(function(){
-  upgradeItem(shredderUpgradeInitial, shredderUpgradeMultiplier, numShredders, shredderEffcacy, numShreddersElement, shredderCostElement);
+  upgradeItem(shredderUpgradeInitial, shredderUpgradeMultiplier, numShredders, shredderEffcacy, $(numShreddersElement), $(shredderCostElement));
 });
 
 $("#shredderLG").click(function(){
@@ -97,12 +97,12 @@ function upgradeItem(initial, multiplier, numItems,  effcacy, itemID, itemCostID
 
     //calculate a new item cost
     var newCost = (initial*multiplier).toFixed(0);
-
+    numItems++
     console.log('new score per tick: ' + scorePerTick);
     //update economy text
     $('#scoreboard').html('Score: '+gameScore);
-    $(document.getElementById("itemID").id).html(numItems);
-    $(document.getElementById("itemCostID".id).html(('-')+newCost);
+    document.getElementById("itemID").html(numItems);
+    document.getElementById("itemCostID").html(('-')+newCost);
   }
     numItems = numItems++;
 };
