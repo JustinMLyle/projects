@@ -1,5 +1,7 @@
 body{
   position: relative;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .headeraffix img{
@@ -179,3 +181,10 @@ h1{
 #shredimg{
   animation-delay: 1s;
 }
+@media (min-width: 1200px) {
+  .titlerow{
+    min-height: 425px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+ }
