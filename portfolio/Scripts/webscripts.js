@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+$(".titlerow").css("background-color", ""); 
+
 new WOW().init();
 
 $('.navbar li a').click(function(smoothScroll) {
@@ -22,7 +24,7 @@ $('.navbar li a').click(function(smoothScroll) {
      });
      window.location.hash = hash;
   });
-   
+
   $('body').scrollspy({
     target: 'headerlist'
   });

@@ -4,6 +4,30 @@ body{
   margin-left: 0;
 }
 
+.alt-grid [class*="col-"] {padding-left:0;padding-right:0}
+.alt-grid .row {margin-left:0;margin-right:0}
+/* container adjusted */
+.alt-grid .container-fluid {width:100%;max-width:none;padding:0;}
+
+.parallax {
+    /* The image used */
+    background-image: url("../Assets/360bridge.jpg");
+    margin-top: 143px;
+    /* Full height */
+    height: 15%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.parralaxForeground{
+  margin: 0;
+}
+
 .headeraffix img{
   margin-left: 10px;
   margin-right: 10px;
@@ -18,8 +42,8 @@ body{
 }
 
 .titlerow{
-  margin-top: 2.5%;
-  margin-bottom: 2%;
+  background-color: transparent;
+  opacity: 1;
 }
 
 h1{
@@ -107,7 +131,9 @@ h1{
   height: 50px;
   width: 50px;
 }
-
+.anchoredImg{
+  max-width: 133px;
+}
 #designicon{
   display: block;
   margin: auto;
@@ -134,24 +160,21 @@ h1{
 
 }
 
-#u4e.iframe{
-  width:100%;
-  min-height: 315px;
+#u4e iframe{
   margin-bottom: 10px;
 }
 
-#tsto.iframe{
-  width:100%;
-  min-height: 315px;
+#tsto iframe{
   margin-bottom: 10px;
 }
 
-/*#dk.iframe{
-  width:50%;
+#dk iframe{
+
   margin-bottom: 10px;
-}*/
+}
 
 .fantasticappbox{
+  height: inherit;
   display: flex;
   flex-direction: row;
 }

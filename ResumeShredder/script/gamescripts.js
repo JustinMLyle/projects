@@ -101,8 +101,8 @@ function upgradeItem(initial, multiplier, numItems,  effcacy, itemID, itemCostID
     console.log('new score per tick: ' + scorePerTick);
     //update economy text
     $('#scoreboard').html('Score: '+gameScore);
-    document.getElementById("itemID").html(numItems);
-    document.getElementById("itemCostID").html(('-')+newCost);
+    document.getElementById("itemID").+numItems;
+    document.getElementById("itemCostID").(('-')+newCost);
   }
     numItems = numItems++;
 };
