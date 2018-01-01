@@ -15,7 +15,7 @@ body{
 }
 
 .titlerow{
-  min-height: 80%;
+  min-height: 90%;
   opacity: 1;
 }
 
@@ -78,7 +78,7 @@ h1{
 }
 
 .skillFooter{
-  margin-bottom: 1%;
+  height: 25%;
   text-align: center;
   background-color: #A33633;
   color: #ffffff;
