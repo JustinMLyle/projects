@@ -18,7 +18,9 @@ body{
   min-height: 90%;
   opacity: 1;
 }
-
+.titleCard{
+    margin-right: 50px;
+}
 h1{
   font-size: 24px;
 }​
@@ -63,7 +65,7 @@ h1{
   padding: 10px;
 }
 .headeraffix{
-  height: 25%;
+  height: 20%;
   background-color: #A33633;
   position: sticky;
 }
@@ -83,9 +85,6 @@ h1{
   background-color: #A33633;
   color: #ffffff;
 }
-.skillFooter p{
-  text-align: center;
-}
 
 .skillFooterAnim{
   animation-delay: 2s;
@@ -103,6 +102,7 @@ h1{
 }
 
 .skill ul{
+  padding: 0px;
   text-align: center;
   list-style: none;
 }

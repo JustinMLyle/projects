@@ -1,42 +1,49 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-new WOW().init();
+    new WOW().init();
 
-$('.navbar li a').click(function(smoothScroll) {
-  smoothScroll.preventDefault();
+    wow = new WOW({
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: '10px', // default
+        mobile: false, // default
+        live: true // default
+    })
+    $('.navbar li a').click(function (smoothScroll) {
+        smoothScroll.preventDefault();
 
-   // store hash
-   var hash = this.hash;
+        // store hash
+        var hash = this.hash;
 
-   //gets the height of the header
-   var navOffset;
-   navOffset = $('#headerlist').height();
+        //gets the height of the header
+        var navOffset;
+        navOffset = $('#headerlist').height();
 
-   // animate and offset
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top - navOffset - 25
-     }, 600, function(){
+        // animate and offset
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - navOffset - 25
+        }, 600, function () {
 
-       // when done, add hash to url
-       // (default click behaviour)
-     });
-     window.location.hash = hash;
-  });
+            // when done, add hash to url
+            // (default click behaviour)
+        });
+        window.location.hash = hash;
+    });
 
-  $('body').scrollspy({
-    target: 'headerlist'
-  });
+    $('body').scrollspy({
+        target: 'headerlist'
+    });
 
-  $('.navbar-left').on('activate.bs.scrollspy', function(){
-    var hash = $('this.').find('li.active a').attr('href');
+    $('.navbar-left').on('activate.bs.scrollspy', function () {
+        var hash = $('this.').find('li.active a').attr('href');
 
-    if(hash !== '#u4e'){
-      console.log(hash);
-    //$('header nav').addClass('navIconBorder');
-    }
-    else{
-    $('header nav').removeClass('navIconBorder');
-    }
-  });
+        if (hash !== '#u4e') {
+            console.log(hash);
+            //$('header nav').addClass('navIconBorder');
+        }
+        else {
+            $('header nav').removeClass('navIconBorder');
+        }
+    });
 
 });
