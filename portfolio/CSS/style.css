@@ -98,7 +98,10 @@ h1{
 }
 
 .contentCards{
+  margin-bottom: 20px;
+  padding: 10px;
   min-height: 350px;
+  max-height: 350px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -110,17 +113,22 @@ h1{
   margin-right: 5px;
 }
 
-|
 
-.reccs{
-  padding: 10px;
-  background-color: #A33633;
-  color: #ffffff;
-  min-height: 225px;
-}
 .reccIcons{
   height: 50px;
   width: 50px;
+}
+
+.pageFooter{
+  min-height: 225px;
+  color: #ffffff;
+  background-color: #a33633;
+  text-align: center;
+  padding: 10px;
+}
+.headeraffix{
+  background-color: #A33633;
+  position: sticky;
 }
 .anchoredImg{
   max-width: 133px;
@@ -162,18 +170,6 @@ h1{
 #dk iframe{
 
   margin-bottom: 10px;
-}
-
-.fantasticappbox{
-  height: inherit;
-  display: flex;
-  flex-direction: row;
-}
-
-.headeraffix{
-  background-color: #A33633;
-  position: sticky;
-
 }
 
 .animDelayer{
