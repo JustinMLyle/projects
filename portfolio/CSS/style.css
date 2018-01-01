@@ -9,40 +9,13 @@ body{
 /* container adjusted */
 .alt-grid .container-fluid {width:100%;max-width:none;padding:0;}
 
-.parallax {
-    /* The image used */
-    background-image: url("../Assets/360bridge.jpg");
-    margin-top: 143px;
-    /* Full height */
-    height: 15%;
-    width: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-.parralaxForeground{
-  margin: 0;
-}
-
 .headeraffix img{
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.navIconBorder{
-  border: solid 2px yellow;
-}
-
-.centertitle {
-  background-color: #ffffff;
-}
-
 .titlerow{
-  bac
+  min-height: 80%;
   opacity: 1;
 }
 
@@ -53,52 +26,15 @@ h1{
 .tester{
   background-color: red;
 }
-
-.skillRow{
-  background-color: #A33633;
-  color: #ffffff;
-  min-height: 225px;
-}
-
-.skillFooter{
-  margin-bottom: 1%;
-  text-align: center;
-  background-color: #A33633;
-  color: #ffffff;
-}
-
-.skillFooterAnim{
-  animation-delay: 2s;
-  padding-bottom: 10px;
-}
-
-.skill{
-  min-height: inherit;
-  padding-bottom: 10px;
-}
-
-.skill h2{
-  text-align: center;
-  animation-delay: 1.5s;
-}
-
-.skill ul{
-  text-align: center;
-  list-style: none;
-}
-
 .listanimator{
   animation-delay: 2s;
 }
-.wipiconTransform{
-  height: 16px;
-  width: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
+.contentRow{
+  margin-bottom: 10px;
+  min-height: 350px;
+  max-height: 350px;
 }
-
 .contentCards{
-  margin-bottom: 20px;
   padding: 10px;
   min-height: 350px;
   max-height: 350px;
@@ -127,12 +63,56 @@ h1{
   padding: 10px;
 }
 .headeraffix{
+  height: 25%;
   background-color: #A33633;
   position: sticky;
 }
 .anchoredImg{
   max-width: 133px;
+  min-height: 133px;
 }
+
+.skillRow{
+  background-color: #A33633;
+  color: #ffffff;
+}
+
+.skillFooter{
+  margin-bottom: 1%;
+  text-align: center;
+  background-color: #A33633;
+  color: #ffffff;
+}
+.skillFooter p{
+  text-align: center;
+}
+
+.skillFooterAnim{
+  animation-delay: 2s;
+  padding-bottom: 10px;
+}
+
+.skill{
+  height: inherit;
+  padding-bottom: 10px;
+}
+
+.skill h2{
+  text-align: center;
+  animation-delay: 1.5s;
+}
+
+.skill ul{
+  text-align: center;
+  list-style: none;
+}
+
+.wipiconTransform{
+  height: 16px;
+  width: 16px;
+  float: right;
+}
+
 #designicon{
   display: block;
   margin: auto;
