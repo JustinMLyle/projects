@@ -5,10 +5,11 @@ $(document).ready(function () {
     wow = new WOW({
         boxClass: 'wow', // default
         animateClass: 'animated', // default
-        offset: '10px', // default
+        offset: '0px', // default
         mobile: false, // default
         live: true // default
     })
+
     $('.navbar li a').click(function (smoothScroll) {
         smoothScroll.preventDefault();
 
@@ -22,7 +23,7 @@ $(document).ready(function () {
         // animate and offset
         $('html, body').animate({
             scrollTop: $(hash).offset().top - navOffset - 25
-        }, 600, function () {
+        }, 250, function () {
 
             // when done, add hash to url
             // (default click behaviour)
