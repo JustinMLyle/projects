@@ -16,6 +16,9 @@
 <body class="alt-grid altBody" id="myScrollspy" data-spy="scroll" data-target=".navbar" data-offset="250">
     <nav id="headerlist" class="navbar justify-content-center row animated fadeIn navbar fixed-top headeraffix hidden-md-down">
         <!--Header for scrollspy-->
+        <a class="navbar-brand"  target="_blank" href="./Assets/jlyleresume.pdf">
+            <img id="resumedownloadimg" class="scrollClicker animated bounceIn" src="./Assets/resumeicon.png">
+        </a>
         <a href="#u4e" class="navbar-brand">
             <img id="u4eimg" class="scrollClicker animated bounceIn" src="./Assets/U4E.png">
         </a>
@@ -102,12 +105,10 @@
 
                     <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
                         <div id="dk" class="card contentCards">
-                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center">
-                                <a style="height: inherit;" target="_blank" href="../ResumeShredder/ResumeShredder.html">
-                                    <!--opens in new tab-->
-                                    <img class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/DK.png">
-                                    <div class="mask flex-center"></div>
-                                </a>
+                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#dkmodal">
+                                <!--opens in new tab-->
+                                <img class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/DK.png">
+                                <div class="mask flex-center"></div>
                             </div>
                             <div class="card-body">
                                 <h2 class="card-title contentCardOverride">Dungeon Keeper</h2>
@@ -120,12 +121,10 @@
                 <div class="row justify-content-center contentRow">
                     <div id="tsto" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
                         <div class="card contentCards">
-                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-strong d-flex anchoredImg align-self-center">
-                                <a style="height: inherit;" target="_blank" href="https://projects.invisionapp.com/share/GXC304B6C#/screens/237525286_IPhone_7">
-                                    <!--opens in new tab-->
-                                    <img class="img-fluid z-depth-5 mx-auto d-block" src="./Assets/TSTO.png">
-                                    <div class="mask flex-center"></div>
-                                </a>
+                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-strong d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#tstomodal">
+                                <!--opens in new tab-->
+                                <img class="img-fluid z-depth-5 mx-auto d-block" src="./Assets/TSTO.png">
+                                <div class="mask flex-center"></div>
                             </div>
                             <div class="card-body">
                                 <h2 class="card-title contentCardOverride">The Simpsons Tapped Out</h2>
@@ -190,54 +189,9 @@
                 </div>
             </div>
         </div>
-        <!--Modal: modalYT-->
-        <div class="modal fade" id="u4emodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-
-                <!--Content-->
-                <div class="modal-content">
-
-                    <!--Body-->
-                    <div class="modal-body mb-0 p-0">
-
-                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-
-                    <!--Footer-->
-                    <div class="modal-footer justify-content-center flex-column flex-md-row">
-                        <span class="mr-4">Spread the word!</span>
-                        <div>
-                            <a type="button" class="btn-floating btn-sm btn-fb">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <!--Twitter-->
-                            <a type="button" class="btn-floating btn-sm btn-tw">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <!--Google +-->
-                            <a type="button" class="btn-floating btn-sm btn-gplus">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <!--Linkedin-->
-                            <a type="button" class="btn-floating btn-sm btn-ins">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </div>
-                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-
-                    </div>
-
-                </div>
-                <!--/.Content-->
-
-            </div>
-        </div>
-        <!--Modal: modalYT-->
     </div>
+    <!--Modal: modalYT-->
+
 
     <script type="text/javascript" src="./Scripts/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -245,9 +199,93 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="./Scripts/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
- 
-        <script type="text/javascript" src="./Scripts/mdb.min.js"></script>
-        <script type="text/javascript" src="./Scripts/webscripts.js"></script>
+
+    <script type="text/javascript" src="./Scripts/mdb.min.js"></script>
+    <script type="text/javascript" src="./Scripts/webscripts.js"></script>
+
+    <div class="modal fade" id="u4emodal" tabindex="-1" role="dialog" aria-labelledby="u4emodal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe id="u4evid" class="clearfix embed-responsive-item" src="https://www.youtube.com/embed/jMfBczn7pH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center flex-column flex-md-row">
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+
+            </div>
+        </div>
+    </div>
+    <!--Modal: modalYT-->
+
+    <div class="modal fade" id="dkmodal" tabindex="-1" role="dialog" aria-labelledby="dkmodal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe id="dkvid1"class="clearfix embed-responsive-item" src="https://www.youtube.com/embed/c21dF3itVFc?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe id="dkvid2" class="embed-responsive-item" src="https://www.youtube.com/embed/bqF_jIVBlzU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center flex-column flex-md-row">
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+
+            </div>
+        </div>
+    </div>
+    <!--Modal: modalYT-->
+
+    <div class="modal fade" id="tstomodal" tabindex="-1" role="dialog" aria-labelledby="tstomodal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe id="tstovid" class="clearfix embed-responsive-item" src="https://www.youtube.com/embed/bh25dscAq9g?rel=0?html5=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center flex-column flex-md-row">
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+
+            </div>
+        </div>
+    </div>
+    <!--Modal: modalYT-->
 
 </body>
 

@@ -204,6 +204,11 @@ h1 {
     margin-top: 15%;
 }
 
+body.modal-open div.modal-backdrop {
+    z-index: 0 !important;
+    bottom: 0;
+}
+
 @media (min-width: 1200px) {
     .titlerow {
         min-height: 425px;
