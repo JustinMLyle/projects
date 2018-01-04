@@ -183,17 +183,19 @@ h1 {
 .animDelayer {
     animation-delay: 1s;
 }
-
+#u4eimg{
+    animation-delay: .20s;
+}
 #dkimg {
-    animation-delay: .25s;
+    animation-delay: .40s;
 }
 
 #tstoimg {
-    animation-delay: .50s;
+    animation-delay: .60s;
 }
 
 #fappimg {
-    animation-delay: .75s;
+    animation-delay: .80s;
 }
 
 #shredimg {
@@ -208,7 +210,14 @@ body.modal-open div.modal-backdrop {
     z-index: 0 !important;
     bottom: 0;
 }
-
+maskStyle {
+    background:
+        linear-gradient(
+    rgba(255, 0, 0, 0.45),
+    rgba(255, 0, 0, 0.45)
+    ),
+        url(./Assets/U4E.png);
+}
 @media (min-width: 1200px) {
     .titlerow {
         min-height: 425px;

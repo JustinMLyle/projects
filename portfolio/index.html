@@ -20,7 +20,7 @@
             <img id="resumedownloadimg" class="scrollClicker animated bounceIn" src="./Assets/resumeicon.png">
         </a>
         <a href="#u4e" class="navbar-brand">
-            <img id="u4eimg" class="scrollClicker animated bounceIn" src="./Assets/U4E.png">
+            <img id="u4eimg" class="scrollClicker animated bounceIn maskStyle" src="">
         </a>
         <a href="#dk" class="navbar-brand">
             <img id="dkimg" class="scrollClicker animated bounceIn" src="./Assets/DK.png">
@@ -89,9 +89,8 @@
                 <div class="row justify-content-center contentRow wow bounceIn">
                     <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
                         <div id="u4e" class="card contentCards">
-                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#u4emodal">
-
-                                <!--opens in new tab-->
+                            <div id="u4ehoveranimator"class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#u4emodal">
+                                <!--opens in modal-->
                                 <img class="contentCardOverride img-fluid z-depth-2 mx-auto d-block" src="./Assets/U4E.png">
                                 <div class="mask flex-center"></div>
 
@@ -105,8 +104,8 @@
 
                     <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
                         <div id="dk" class="card contentCards">
-                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#dkmodal">
-                                <!--opens in new tab-->
+                            <div id="dkhoveranimator" class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#dkmodal">
+                                <!--opens in modal-->
                                 <img class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/DK.png">
                                 <div class="mask flex-center"></div>
                             </div>
@@ -121,9 +120,9 @@
                 <div class="row justify-content-center contentRow">
                     <div id="tsto" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
                         <div class="card contentCards">
-                            <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-strong d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#tstomodal">
-                                <!--opens in new tab-->
-                                <img class="img-fluid z-depth-5 mx-auto d-block" src="./Assets/TSTO.png">
+                            <div id="tstohoveranimator" class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-strong d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#tstomodal">
+                                <!--opens in modal-->
+                                <img  class="img-fluid z-depth-5 mx-auto d-block" src="./Assets/TSTO.png">
                                 <div class="mask flex-center"></div>
                             </div>
                             <div class="card-body">
@@ -133,7 +132,7 @@
                         </div>
                     </div>
                     <div id="fapp" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
-                        <div class="card contentCards">
+                        <div id="fapphoveranimator"class="card contentCards">
                             <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center ">
                                 <a style="height: inherit;" target="_blank" href="https://projects.invisionapp.com/share/GXC304B6C#/screens/237525286_IPhone_7">
                                     <!--opens in new tab-->
@@ -148,7 +147,7 @@
                         </div>
                     </div>
                     <div id="resumeshredder" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 wow bounceIn">
-                        <div class="card contentCards">
+                        <div id="resumeshredderhoveranimator" class="card contentCards">
                             <div class="contentCardOverride view overlay z-depth-5 hoverable hm-cyan-light d-flex anchoredImg align-self-center">
                                 <a style="height: inherit;" target="_blank" href="../ResumeShredder/ResumeShredder.html">
                                     <!--opens in new tab-->
