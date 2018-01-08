@@ -40,6 +40,12 @@ h1 {
     font-size: 24px;
 }
 
+h5{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 5px;
+}
+
 ​ .tester {
     background-color: red;
 }
@@ -85,15 +91,21 @@ h1 {
 .reccIcons {
     height: 50px;
     width: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #55fff3;
 }
 
 .pageFooter {
     margin-top: 25px;
-    min-height: 250px;
+    
     color: #ffffff;
     background-color: #a33633;
     text-align: center;
-    padding: 10px;
+}
+.reccText p{
+    padding-bottom: 25px;
+    
 }
 
 .headeraffix {
@@ -210,14 +222,7 @@ body.modal-open div.modal-backdrop {
     z-index: 0 !important;
     bottom: 0;
 }
-maskStyle {
-    background:
-        linear-gradient(
-    rgba(255, 0, 0, 0.45),
-    rgba(255, 0, 0, 0.45)
-    ),
-        url(./Assets/U4E.png);
-}
+
 @media (min-width: 1200px) {
     .titlerow {
         min-height: 425px;

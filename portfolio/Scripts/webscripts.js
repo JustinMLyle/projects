@@ -61,46 +61,53 @@ $(document).ready(function () {
 
     $('#u4ehoveranimator').hover(
         function () {
-            $('#u4eimg').removeClass("bounceIn");
-            $('#u4eimg').addClass("rubberBand");
+            $('#u4ehoveranimator').addClass("animated");
+            $('#u4ehoveranimator').addClass("rubberBand");
         },
         function () {
-            $('#u4eimg').removeClass("rubberBand");
+            $('#u4ehoveranimator').removeClass("rubberBand");
         }
     );
 
     $('#dkhoveranimator').hover(
         function () {
-            $('#dkimg').removeClass("bounceIn");
-            $('#dkimg').addClass("rubberBand");
+            $('#dkhoveranimator').addClass("animated");
+            $('#dkhoveranimator').addClass("rubberBand");
         },
         function () {
-            $('#dkimg').removeClass("rubberBand");
+            $('#dkhoveranimator').removeClass("rubberBand");
         }
     );
 
     $('#tstohoveranimator').hover(
         function () {
-            $('#tstoimg').removeClass("bounceIn");
-            $('#tstoimg').addClass("rubberBand");
+            $('#tstohoveranimator').addClass("animated");
+            $('#tstohoveranimator').addClass("rubberBand");
         },
         function () {
-            $('#tstoimg').removeClass("rubberBand");            
+            $('#tstohoveranimator').removeClass("rubberBand");            
         }
     );
 
-    $('#fapphoveranimator').hover(function (wobbler) {
-        $('#fappimg').removeClass("bounceIn");
-        $('#fappimg').addClass("rubberBand");
-    });
+    
 
     $('#fapphoveranimator').hover(
         function () {
-            $('#fappimg').removeClass("bounceIn");
-            $('#fappimg').addClass("rubberBand");
+            $('#fapphoveranimator').addClass("animated");
+            $('#fapphoveranimator').addClass("rubberBand");
         },
         function () {
-            $('#fappimg').removeClass("rubberBand");
+            $('#fapphoveranimator').removeClass("rubberBand");
+        }
+    );
+
+    $('#resumeshredderhoveranimator').hover(
+        function () {
+            $('#resumeshredderhoveranimator').addClass("animated");
+            $('#resumeshredderhoveranimator').addClass("rubberBand");
+        },
+        function () {
+            $('#resumeshredderhoveranimator').removeClass("rubberBand");
         }
     );
 
