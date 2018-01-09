@@ -119,13 +119,13 @@ h5{
     min-height: 133px;
 }
 
-.skillRow {
+.skillRow {    
+    margin-top: 3%;
     background-color: #A33633;
     color: #ffffff;
 }
 
-.skillFooter {
-    height: 12%;
+.skillFooter {    
     text-align: center;
     background-color: #A33633;
     color: #ffffff;
