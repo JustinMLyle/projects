@@ -4,6 +4,7 @@ body {
     margin-left: 0;
     font-family: 'Hammersmith One', sans-serif;
     color: white;
+    background-color: #bdbdbd;
 }
 
 .alt-grid [class*="col-"] {
@@ -59,16 +60,17 @@ h5{
     min-height: 350px;
     max-height: 350px;
 }
-
+.contentCardContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .contentCards {
     color: white;
     background-color: inherit;
     padding: 10px;
     min-height: 350px;
     max-height: 350px;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 10px;
 }
 
     .contentCardOverride {
@@ -96,21 +98,32 @@ h5{
     border-color: #55fff3;
 }
 
-.pageFooter {
-    margin-top: 25px;
-    
-    color: #ffffff;
-    background-color: #a33633;
-    text-align: center;
+.testimonialMods{    
+    max-height: 300px;
 }
-.reccText p{
-    padding-bottom: 25px;
+
+.contactEmbed{
+    margin-top: 75px;
     
+}
+
+.pageFooter {
+    min-height: 500px;
+    color: #ffffff;   
+}
+
+.avatar{
+    max-height: 170px;
+}
+
+.testimonial p {
+    color: white !important;
+    font-size: 16px !important;
 }
 
 .headeraffix {
     height: 20%;
-    background-color: #A33633;
+    
     position: sticky;
 }
 
@@ -121,13 +134,13 @@ h5{
 
 .skillRow {    
     margin-top: 3%;
-    background-color: #A33633;
+    
     color: #ffffff;
 }
 
 .skillFooter {    
     text-align: center;
-    background-color: #A33633;
+    
     color: #ffffff;
 }
 
@@ -191,29 +204,6 @@ h5{
 #dk iframe {
     margin-bottom: 10px;
 }
-
-.animDelayer {
-    animation-delay: 1s;
-}
-#u4eimg{
-    animation-delay: .20s;
-}
-#dkimg {
-    animation-delay: .40s;
-}
-
-#tstoimg {
-    animation-delay: .60s;
-}
-
-#fappimg {
-    animation-delay: .80s;
-}
-
-#shredimg {
-    animation-delay: 1s;
-}
-
 #u4emodal{
     margin-top: 15%;
 }

@@ -26,89 +26,69 @@ $(document).ready(function () {
         target: 'headerlist'
     });
 
-    $('.navbar-left').on('activate.bs.scrollspy', function () {
-        var hash = $('this.').find('li.active a').attr('href');
-
-        if (hash !== '#u4e') {
-            console.log(hash);
-            //$('header nav').addClass('navIconBorder');
-        }
-        else {
-            $('header nav').removeClass('navIconBorder');
-        }
+    var JFL_80106176980154 = new JotformFeedback({
+        formId: '80106176980154',
+        base: 'https://form.jotform.com/',
+        windowTitle: 'Contact Me',
+        background: '#FFFFFF',
+        fontColor: '#FFFFFF',
+        type: 'false',
+        padding: 25,
+        height: 650,
+        width: 700,
+        openOnLoad: false,
     });
 
-    $('.navbar li a').click(function (smoothScroll) {
-        smoothScroll.preventDefault();
-
-        // store hash
-        var hash = this.hash;
-
-        //gets the height of the header
-        var navOffset;
-        navOffset = $('#headerlist').height();
-
-        // animate and offset
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - navOffset - 25
-        }, 250, function () {
-
-            // when done, add hash to url
-            // (default click behaviour)
-        });
-        window.location.hash = hash;
-    });
-
-    $('#u4ehoveranimator').hover(
-        function () {
-            $('#u4ehoveranimator').addClass("animated");
-            $('#u4ehoveranimator').addClass("rubberBand");
-        },
-        function () {
-            $('#u4ehoveranimator').removeClass("rubberBand");
+    var ifr = document.getElementById("JotFormIFrame-80106176980154");
+    if (window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if (ifr && get.length > 0) {
+            var src = ifr.src;
+            src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get;
+            ifr.src = src;
         }
-    );
-
-    $('#dkhoveranimator').hover(
-        function () {
-            $('#dkhoveranimator').addClass("animated");
-            $('#dkhoveranimator').addClass("rubberBand");
-        },
-        function () {
-            $('#dkhoveranimator').removeClass("rubberBand");
+    }
+    window.handleIFrameMessage = function (e) {
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+            case "scrollIntoView":
+                iframe.scrollIntoView();
+                break;
+            case "setHeight":
+                iframe.style.height = args[1] + "px";
+                break;
+            case "collapseErrorPage":
+                if (iframe.clientHeight > window.innerHeight) {
+                    iframe.style.height = window.innerHeight + "px";
+                }
+                break;
+            case "reloadPage":
+                window.location.reload();
+                break;
+            case "loadScript":
+                var src = args[1];
+                if (args.length > 3) {
+                    src = args[1] + ':' + args[2];
+                }
+                var script = document.createElement('script');
+                script.src = src;
+                script.type = 'text/javascript';
+                document.body.appendChild(script);
+                break;
         }
-    );
-
-    $('#tstohoveranimator').hover(
-        function () {
-            $('#tstohoveranimator').addClass("animated");
-            $('#tstohoveranimator').addClass("rubberBand");
-        },
-        function () {
-            $('#tstohoveranimator').removeClass("rubberBand");            
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+            var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
+            iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
         }
-    );
+    };
+    if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+    }
 
-    
-
-    $('#fapphoveranimator').hover(
-        function () {
-            $('#fapphoveranimator').addClass("animated");
-            $('#fapphoveranimator').addClass("rubberBand");
-        },
-        function () {
-            $('#fapphoveranimator').removeClass("rubberBand");
-        }
-    );
-
-    $('#resumeshredderhoveranimator').hover(
-        function () {
-            $('#resumeshredderhoveranimator').addClass("animated");
-            $('#resumeshredderhoveranimator').addClass("rubberBand");
-        },
-        function () {
-            $('#resumeshredderhoveranimator').removeClass("rubberBand");
-        }
-    );
 
 });
