@@ -4,7 +4,7 @@ body {
     margin-left: 0;
     font-family: 'Hammersmith One', sans-serif;
     color: white;
-    background-color: #bdbdbd;
+    background-color: #f5f5f5;
 }
 
 .alt-grid [class*="col-"] {
@@ -34,7 +34,7 @@ body {
 }
 
 .titleCard {
-    margin-right: 50px;
+    margin-left: 50px;
 }
 
 h1 {
@@ -47,20 +47,18 @@ h5{
     margin-left: 5px;
 }
 
-​ .tester {
-    background-color: red;
-}
-
-.listanimator {
-    animation-delay: 2s;
+​ .carouselImage{
+    max-height: 200px !important;
+    max-width: 200px !important;
 }
 
 .contentRow {
     margin-bottom: 10px;
-    min-height: 350px;
+    min-height: 500px;
     max-height: 350px;
 }
 .contentCardContainer{
+    min-height: 1000px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -68,19 +66,20 @@ h5{
     color: white;
     background-color: inherit;
     padding: 10px;
-    min-height: 350px;
+    min-height: 450px;
     max-height: 350px;
     margin: 10px;
 }
+    
 
     .contentCardOverride {
-     color: white !important;        
+     color: black !important;        
  
     }
     .card-text{
         font-size: 16px !important;
     }
- 
+
     
 .u4ecard {
     min-height: 350px;

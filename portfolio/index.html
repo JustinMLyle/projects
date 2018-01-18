@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 </head>
 <body class="alt-grid altBody" id="myScrollspy" data-spy="scroll" data-target=".navbar" data-offset="250">
-    <nav id="headerlist" class="navbar justify-content-center row  navbar fixed-top headeraffix hidden-md-down elegant-color">
+    <nav id="headerlist" class="navbar justify-content-center row  navbar fixed-top headeraffix hidden-md-down  purple darken-4">
         <!--Header for scrollspy-->
         <ul class="list-inline">
             <li class="list-inline-item">
@@ -50,8 +50,52 @@
         </ul>
     </nav>
     <div class="container-fluid justify-content-center" data-spy="scroll" data-target="headerlist" data-offset="500" style="margin:0;">
-        <div class="row titlerow justify-content-end">
-            <div class="titleCard col-lg-3 col-md-12 col-sm-12 col-xs-12 align-self-center white-text animDelayer animated fadeInRight">
+        <div class="row titlerow justify-content-center">
+            <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 align-self-center">
+
+                <!--Carousel Wrapper-->
+                <div id="openingCarousel" class="carousel slide carousel-fade rounded-circle" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#openingCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#openingCarousel" data-slide-to="1"></li>
+                        <li data-target="#openingCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner carouselImage" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <img class="carouselImage img-fluid rounded-circle" src="./Assets/me.png" alt="First slide">
+                        </div>
+                        <!--/First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <img class="carouselImage img-fluid rounded-circle" src="./Assets/me2.png" alt="First slide">
+                        </div>
+                        <!--/Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <img class="carouselImage img-fluid rounded-circle" src="./Assets/me3.png" alt="First slide">
+                        </div>
+                        <!--/Third slide-->
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#openingCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#openingCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+            </div>
+            <div class="titleCard col-lg-3 col-md-12 col-sm-12 col-xs-12 align-self-center black-text">
                 <h1>Hey there! I'm Justin Lyle!</h1>
                 <p>
                     I'm a UX designer and Web Developer who strives to create user-friendly
@@ -60,13 +104,13 @@
                     created unique user experiences from storyboards and wireframes to interactive
                     prototypes for the gaming industry. I have a B.A. in English and
                     Minor in Computer Game Design from George Mason University. I'm also currently
-                    attending Austin Code Academy to further expand his skills in Front-End Web
+                    attending Austin Code Academy to further expand my skills in Front-End Web
                     Development.
                 </p>
             </div>
         </div>
     </div>
-    <div class="row justify-content-center skillRow elegant-color">
+    <div class="row justify-content-center skillRow  purple darken-4">
         <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 align-bottom skill">
             <img class="" id="designicon" src="./Assets/designicon.png">
             <h2 class="">Design</h2>
@@ -96,93 +140,96 @@
             </ul>
         </div>
     </div>
-    <div class="row skillFooter elegant-color justify-content-center">
+    <div class="row skillFooter  purple darken-4 justify-content-center">
         <div class=" d-inline-flex  align-self-start skillFooterAnim">
             <img class="wipiconTransform img-fluid" src="./Assets/wipicon.png"><p>Coming Soon!</p>
         </div>
     </div>
-    <div class="container-fluid contentCardContainer">
-
-        <div class="row justify-content-center contentRow ">
-            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                <div id="u4e" class="card contentCards">
-                    <div class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#u4emodal">
+    <div class="container-fluid contentCardContainer align-items-center">
+        <div class="row align-items-center">
+            <div class="row align-items-center justify-content-center contentRow ">
+                <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div id="u4e" class="card contentCards">
+                        <img class="contentCardOverride img-fluid z-depth-2 mx-auto d-block" src="./Assets/U4E.png">
+                        <div class="card-body">
+                            <h2 class="card-title contentCardOverride">Ultima Forever</h2>
+                            <p class="card-text contentCardOverride">My internship and start into game development. I wrote hundreds of quests and thousands of lines of dialogue as my primary responsibilities.</p>
+                        </div>
                         <!--opens in modal-->
-                        <a id="u4ehoveranimator">
-                            <img class="contentCardOverride img-fluid z-depth-2 mx-auto d-block" src="./Assets/U4E.png">
-                        </a>
+                        <div class="row justify-content-center">
+                            <button data-toggle="modal" data-target="#u4emodal" type="button" class="btn btn-secondary btn-rounded col-3">Read More</button>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h2 class="card-title contentCardOverride">Ultima Forever</h2>
-                        <p class="card-text contentCardOverride">My internship and start into game development. I wrote hundreds of quests and thousands of lines of dialogue as my primary responsibilities.</p>
+
+                </div>
+
+                <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div id="dk" class="card contentCards">
+                        <img id="dkhoveranimator" class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/DK.png">
+                        <div class="card-body">
+                            <h2 class="card-title contentCardOverride">Dungeon Keeper</h2>
+                            <p class="card-text contentCardOverride">My first foray into full fledged game design. Here I cut my teeth on feature and UX Design and I created a bunch of awesome features "soup to nuts".</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button data-toggle="modal" data-target="#dkmodal" type="button" class="btn btn-secondary btn-rounded col-3">Read More</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                <div id="dk" class="card contentCards">
-                    <div class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#dkmodal">
-                        <!--opens in modal-->
-                        <a>
-                            <img id="dkhoveranimator" class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/DK.png">
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title contentCardOverride">Dungeon Keeper</h2>
-                        <p class="card-text contentCardOverride">My first foray into full fledged game design. Here I cut my teeth on feature and UX Design and I created a bunch of awesome features "soup to nuts".</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center contentRow">
-            <div id="tsto" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                <div class="card contentCards">
-                    <div id="tstohoveranimator" class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center" data-toggle="modal" data-target="#tstomodal">
-                        <!--opens in modal-->
-                        <a>
+            <div class="row align-items-center justify-content-center contentRow">
+                <div id="tsto" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="card contentCards">
+                        <div id="tstohoveranimator" class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center">
+                            <!--opens in modal-->
                             <img class="img-fluid z-depth-5 mx-auto d-block" src="./Assets/TSTO.png">
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title contentCardOverride">The Simpsons Tapped Out</h2>
-                        <p class="card-text contentCardOverride">My third project, here I worked as a scripter and deployed live updates and patches that I built content using a goofy proprietary XML scripting language</p>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title contentCardOverride">The Simpsons Tapped Out</h2>
+                            <p class="card-text contentCardOverride">My third project, here I worked as a scripter and deployed live updates and patches that I built content using a goofy proprietary XML scripting language</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button data-toggle="modal" data-target="#tstomodal" type="button" class="btn btn-secondary btn-rounded col-3">Read More</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="fapp" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                <div class="card contentCards">
-                    <div id="fapphoveranimator" class="contentCardOverride view overlay z-depth-5 d-flex anchoredImg align-self-center ">
-                        <a target="_blank" href="https://projects.invisionapp.com/share/GXC304B6C#/screens/237525286_IPhone_7">
-                            <!--opens in new tab-->
+                <div id="fapp" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="card contentCards">
+                        <div id="" class="contentCardOverride view overlay z-depth-5 d-flex anchoredImg align-self-center ">
                             <img class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/fAppIcon.png">
-                        </a>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title contentCardOverride">Fantastic App</h2>
+                            <p class="card-text contentCardOverride">This is an exercise I did to learn how to use sketch and inVision. I made lots of boxes and a huge sketch symbol library in the process!</p>
+                        </div>
+                        <!--opens in new tab-->
+                        <div class="row justify-content-center">
+                            <a target="_blank" href="https://projects.invisionapp.com/share/GXC304B6C#/screens/237525286_IPhone_7" class="btn btn-secondary btn-rounded col-3">View Project</a>
+                        </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h2 class="card-title contentCardOverride">Fantastic App</h2>
-                        <p class="card-text contentCardOverride">This is an exercise I did to learn how to use sketch and inVision. I made lots of boxes and a huge sketch symbol library in the process!</p>
-                    </div>
-                </div>
-            </div>
-            <div id="resumeshredder" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                <div class="card contentCards">
-                    <div id="resumeshredderhoveranimator" class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center">
-                        <a target="_blank" href="../ResumeShredder/ResumeShredder.html">
-                            <!--opens in new tab-->
+                <div id="resumeshredder" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="card contentCards">
+                        <div id="resumeshredderhoveranimator" class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center">
+
                             <img class="img-fluid z-depth-2 mx-auto d-block" src="./Assets/ResumeShredderIcon.png">
-                        </a>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title contentCardOverride">Justin Lyle's Resume Shredder!</h2>
+                            <p class="card-text contentCardOverride">"You are a recruiter who has recieved far to many copies of Justin Lyle's Resume. Shred them as fast as you can!" This web game is made entirely using bootstrap and jQuery!</p>
+                        </div>
+                        <!--opens in new tab-->
+                        <div class="row justify-content-center">
+                            <a target="_blank" href="../ResumeShredder/ResumeShredder.html" class="btn btn-secondary btn-rounded col-3">View Project</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h2 class="card-title contentCardOverride">Justin Lyle's Resume Shredder!</h2>
-                        <p class="card-text contentCardOverride">"You are a recruiter who has recieved far to many copies of Justin Lyle's Resume. Shred them as fast as you can!" This web game is made entirely using bootstrap and jQuery!</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid elegant-color">
-        <div class="row justify-content-center pageFooter elegant-color">
+    <div class="container-fluid  purple darken-4">
+        <div class="row justify-content-center pageFooter  purple darken-4">
 
             <!--Section: Testimonials v.2-->
             <section class="text-center pb-5 testimonialMods col-6">
@@ -198,7 +245,7 @@
                         <!--First slide-->
                         <div class="carousel-item active">
 
-                            <div class="testimonial elegant-color">
+                            <div class="testimonial purple darken-4">
                                 <!--Avatar-->
                                 <h4>David Scott, Senior Software Engineer</h4>
                                 <div class="avatar">
@@ -226,18 +273,18 @@
                                     "Justin exhibits tendencies of being a great listener and is very thoughtful in his approach to design. When tackling challenges, he applies the appropriate balance of data-driven insights, along with genuine creative innovation, to arrive at his solution. He gets data, asks smart questions, and is endlessly curious and seeking to learn more."
                                 </p>
                             </div>
-
+                            
                         </div>
                         <!--Second slide-->
                         <!--Third slide-->
-                        <div class="carousel-item">
+                        <!--<div class="carousel-item">
                             <h4>Alison Carrier, Advanced User Experience Designer</h4>
                             <div class="testimonial">
-                                <!--Avatar-->
+                                
                                 <div class="avatar">
                                     <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
                                 </div>
-                                <!--Content-->
+                                
                                 <p>
                                     <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -245,7 +292,7 @@
                                 </p>
                             </div>
 
-                        </div>
+                        </div>-->
                         <!--Third slide-->
                     </div>
                     <!--Slides-->
@@ -273,7 +320,7 @@
 
         </div>
         <div class="container-fluid contactEmbed">
-            <div class="row elegant-color justify-content-center col-12">
+            <div class="row  purple darken-4 justify-content-center col-12">
                 <h2>Lets Work Together!</h2>
                 <script type="text/javascript" src="https://form.jotform.com/jsform/80106176980154"></script>
 
@@ -311,10 +358,16 @@
                     </div>
 
                     <!--Footer-->
-                    <div class="modal-footer justify-content-center flex-column flex-md-row">
-                        <button type="button" class="btn btn-outline-cyan accent-2 btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-                    </div>
+                    <div class="modal-footer justify-content-center container-fluid">
 
+                        <div class="row">
+                            <div class="col-3">
+
+                            </div>
+                        </div>
+
+                        <button type="button" style="width:250px;" class="btn btn-outline-cyan accent-2 btn-rounded" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
                 <!--/.Content-->
 
@@ -341,8 +394,15 @@
                     </div>
 
                     <!--Footer-->
-                    <div class="modal-footer justify-content-center flex-column flex-md-row">
-                        <button type="button" class="btn btn-outline-cyan accent-2 btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    <div class="modal-footer justify-content-center container-fluid">
+
+                        <div class="row">
+                            <div class="col-3">
+
+                            </div>
+                        </div>
+
+                        <button type="button" style="width:250px;" class="btn btn-outline-cyan accent-2 btn-rounded" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
@@ -368,8 +428,15 @@
                     </div>
 
                     <!--Footer-->
-                    <div class="modal-footer justify-content-center flex-column flex-md-row">
-                        <button type="button" class="btn btn-outline-cyan accent-2 btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    <div class="modal-footer justify-content-center container-fluid">
+
+                        <div class="row">
+                            <div class="col-3">
+
+                            </div>
+                        </div>
+
+                        <button type="button" style="width:250px;" class="btn btn-outline-cyan accent-2 btn-rounded" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
