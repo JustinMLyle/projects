@@ -1,0 +1,5 @@
+/Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/bin/Debug/Classwork.exe
+/Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/bin/Debug/Classwork.pdb
+/Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/obj/x86/Debug/Classwork.csproj.CoreCompileInputs.cache
+/Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/obj/x86/Debug/Classwork.exe
+/Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/obj/x86/Debug/Classwork.pdb
