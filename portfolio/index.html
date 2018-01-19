@@ -5,51 +5,51 @@
     <meta name="author" content="Justin Michael Lyle">
     <meta name="description" content="The Portfolio of Justin M Lyle, Game and UX Designer">
     <meta name="keywords" content="Game Designer, Software Developer, Web Designer, Ui/UX, designer, UI Designer, Austin">
-    <!-- Bootstrap core CSS -->
-    <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core css -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="./CSS/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link href="./css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    
 </head>
-<body class="alt-grid altBody" id="myScrollspy" data-spy="scroll" data-target=".navbar" data-offset="250">
-    <nav id="headerlist" class="navbar justify-content-center row  navbar fixed-top headeraffix hidden-md-down  purple darken-4">
+<body class="alt-grid altBody">
+    <nav id="headerlist" class="navbar justify-content-center row  navbar fixed-top headeraffix hidden-md-down purple darken-4">
         <!--Header for scrollspy-->
-        <ul class="list-inline">
+        <ul class="list-inline smooth-scroll">
             <li class="list-inline-item">
                 <a class="navbar-brand" target="_blank" href="./Assets/jlyleresume.pdf">
-                    <img class="scrollClicker " src="./Assets/resumeicon.png">
+                    <img class="img-fluid" src="./Assets/download.png">
+                </a>
+                <div class="headerText">Download Resume</div>
+            </li>
+            <li class="list-inline-item">
+                <a href="#skillsTarg" class="navbar-brand">
+                    <img id="u4eimg" class="scrollClicker " src="./Assets/skills.png">
+                    <p>Skills</p>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a href="#u4e" class="navbar-brand">
-                    <img id="u4eimg" class="scrollClicker " src="./Assets/U4E.png">
+                <a href="#projectsTarg" class="navbar-brand">
+                    <img id="dkimg" src="./Assets/projects.png">
+                    <p>Projects</p>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a href="#dk" class="navbar-brand">
-                    <img id="dkimg" class="scrollClicker " src="./Assets/DK.png">
+                <a href="#testimonialsTarg" class="navbar-brand">
+                    <img id="tstoimg" src="./Assets/testimonials.png">
+                    <p>Testimonials></p>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a href="#tsto" class="navbar-brand">
-                    <img id="tstoimg" class="scrollClicker " src="./Assets/TSTO.png">
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#fapp" class="navbar-brand">
-                    <img id="fappimg" class="scrollClicker " src="./Assets/fAppIcon.png">
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#resumeshredder" class="navbar-brand">
-                    <img id="shredimg" class="scrollClicker " src="./Assets/ResumeShredderIcon.png">
+                <a href="#contactMe" class="navbar-brand">
+                    <img id="fappimg" src="./Assets/contactMe.png">
+                    <p>Contact Me</p>
                 </a>
             </li>
         </ul>
     </nav>
-    <div class="container-fluid justify-content-center" data-spy="scroll" data-target="headerlist" data-offset="500" style="margin:0;">
+    <div class="container-fluid justify-content-center" style="margin:0;">
         <div class="row titlerow justify-content-center">
             <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 align-self-center">
 
@@ -97,7 +97,7 @@
             </div>
             <div class="titleCard col-lg-3 col-md-12 col-sm-12 col-xs-12 align-self-center black-text">
                 <h1>Hey there! I'm Justin Lyle!</h1>
-                <p>
+                <p id="skillsTarg">
                     I'm a UX designer and Web Developer who strives to create user-friendly
                     products that people love. User-centered design propels businesses
                     forward. I started my career at Electronic Arts as an Assistant Designer where I
@@ -110,7 +110,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center skillRow  purple darken-4">
+    <div id="projectsTarg" class="row justify-content-center skillRow  purple darken-4">
         <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 align-bottom skill">
             <img class="" id="designicon" src="./Assets/designicon.png">
             <h2 class="">Design</h2>
@@ -126,7 +126,7 @@
             <img class="" id="frontendicon" src="./Assets/frontendicon.png">
             <h2 class="">Front End</h2>
             <ul>
-                <li class="listanimator ">HTML/CSS</li>
+                <li class="listanimator ">HTML/css</li>
                 <li class="listanimator ">Bootstrap</li>
                 <li class="listanimator ">JQuery</li>
             </ul>
@@ -146,10 +146,13 @@
         </div>
     </div>
     <div class="container-fluid contentCardContainer align-items-center">
-        <div class="row align-items-center">
+        <div id="projects" class="row align-items-center">
+            <div class="col-12">
+                <h2>Projects</h2>
+            </div>
             <div class="row align-items-center justify-content-center contentRow ">
                 <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                    <div id="u4e" class="card contentCards">
+                    <div class="card contentCards purple darken-4">
                         <img class="contentCardOverride img-fluid z-depth-2 mx-auto d-block" src="./Assets/U4E.png">
                         <div class="card-body">
                             <h2 class="card-title contentCardOverride">Ultima Forever</h2>
@@ -164,7 +167,7 @@
                 </div>
 
                 <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                    <div id="dk" class="card contentCards">
+                    <div class="card contentCards purple darken-4">
                         <img id="dkhoveranimator" class="img-fluid z-depth-2 mx-auto d-block rounded" src="./Assets/DK.png">
                         <div class="card-body">
                             <h2 class="card-title contentCardOverride">Dungeon Keeper</h2>
@@ -178,13 +181,13 @@
             </div>
 
             <div class="row align-items-center justify-content-center contentRow">
-                <div id="tsto" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="card contentCards">
+                <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="card contentCards purple darken-4">
                         <div id="tstohoveranimator" class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center">
                             <!--opens in modal-->
                             <img class="img-fluid z-depth-5 mx-auto d-block rounded" src="./Assets/TSTO.png">
                         </div>
-                        <div class="card-body">
+                        <div id="testimonialsTarg" class="card-body">
                             <h2 class="card-title contentCardOverride">The Simpsons Tapped Out</h2>
                             <p class="card-text contentCardOverride">My third project, here I worked as a scripter and deployed live updates and patches that I built content using a goofy proprietary XML scripting language</p>
                         </div>
@@ -193,8 +196,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="fapp" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="card contentCards">
+                <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="card contentCards purple darken-4">
                         <div id="" class="contentCardOverride view overlay z-depth-5 d-flex anchoredImg align-self-center ">
                             <img class="img-fluid z-depth-2 mx-auto d-block rounded" src="./Assets/fAppIcon.png">
                         </div>
@@ -206,10 +209,10 @@
                         <div class="row justify-content-center">
                             <a target="_blank" href="https://projects.invisionapp.com/share/GXC304B6C#/screens/237525286_IPhone_7" class="btn btn-secondary btn-rounded col-4">View Project</a>
                         </div>
-                        </div>
                     </div>
-                <div id="resumeshredder" class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="card contentCards">
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="card contentCards purple darken-4">
                         <div id="resumeshredderhoveranimator" class="contentCardOverride z-depth-5 d-flex anchoredImg align-self-center">
 
                             <img class="img-fluid z-depth-2 mx-auto d-block rounded" src="./Assets/ResumeShredderIcon.png">
@@ -221,14 +224,14 @@
                         <!--opens in new tab-->
                         <div class="row justify-content-center">
                             <a target="_blank" href="../ResumeShredder/ResumeShredder.html" class="btn btn-secondary btn-rounded col-4">View Project</a>
-                            </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid  purple darken-4">
+    <div id="testimonials" class="container-fluid  purple darken-4">
         <div class="row justify-content-center pageFooter  purple darken-4">
 
             <!--Section: Testimonials v.2-->
@@ -321,7 +324,7 @@
         </div>
         <div class="container-fluid contactEmbed">
             <div class="row  purple darken-4 justify-content-center col-12">
-                <h2>Lets Work Together!</h2>
+                <h2 id="contactMe">Lets Work Together!</h2>
                 <script type="text/javascript" src="https://form.jotform.com/jsform/80106176980154"></script>
 
             </div>
@@ -329,19 +332,22 @@
     </div>
 
 
+    <!-- JQuery -->
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="./Scripts/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="./Scripts/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="./Scripts/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="./Scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./Scripts/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
     <!--Form Scripts-->
     <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
 
     <!--WebScripts-->
-    <script type="text/javascript" src="./Scripts/webscripts.js"></script>
+    <script type="text/javascript" src="./js/webscripts.js"></script>
 
     <div class="modal fade" id="u4emodal" tabindex="-1" role="dialog" aria-labelledby="u4emodal" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -366,7 +372,7 @@
                             </div>
                         </div>
 
-                        <button type="button" style="width:250px;" class="btn btn-outline-cyan accent-2 btn-rounded" data-dismiss="modal">Close</button>
+                        <button type="button" style="width:250px;" class="btn btn-secondary accent-2 btn-rounded" data-dismiss="modal">Close</button>
                     </div>
                 </div>
                 <!--/.Content-->
@@ -402,7 +408,7 @@
                             </div>
                         </div>
 
-                        <button type="button" style="width:250px;" class="btn btn-outline-cyan accent-2 btn-rounded" data-dismiss="modal">Close</button>
+                        <button type="button" style="width:250px;" class="btn btn-secondary accent-2 btn-rounded" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
@@ -436,7 +442,7 @@
                             </div>
                         </div>
 
-                        <button type="button" style="width:250px;" class="btn btn-outline-cyan accent-2 btn-rounded" data-dismiss="modal">Close</button>
+                        <button type="button" style="width:250px;" class="btn btn-secondary accent-2 btn-rounded" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
