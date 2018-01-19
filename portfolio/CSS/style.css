@@ -66,21 +66,21 @@ h5{
     color: white;
     background-color: inherit;
     padding: 10px;
-    min-height: 450px;
+    min-height: 500px;
     max-height: 350px;
     margin: 10px;
 }
-    
+
 
     .contentCardOverride {
-     color: black !important;        
- 
+     color: black !important;
+
     }
     .card-text{
         font-size: 16px !important;
     }
 
-    
+
 .u4ecard {
     min-height: 350px;
     max-height: 350px;
@@ -97,18 +97,18 @@ h5{
     border-color: #55fff3;
 }
 
-.testimonialMods{    
+.testimonialMods{
     max-height: 300px;
 }
 
 .contactEmbed{
     margin-top: 75px;
-    
+
 }
 
 .pageFooter {
     min-height: 500px;
-    color: #ffffff;   
+    color: #ffffff;
 }
 
 .avatar{
@@ -122,7 +122,7 @@ h5{
 
 .headeraffix {
     height: 20%;
-    
+
     position: sticky;
 }
 
@@ -131,15 +131,15 @@ h5{
     min-height: 133px;
 }
 
-.skillRow {    
+.skillRow {
     margin-top: 3%;
-    
+
     color: #ffffff;
 }
 
-.skillFooter {    
+.skillFooter {
     text-align: center;
-    
+
     color: #ffffff;
 }
 
@@ -166,7 +166,7 @@ h5{
 
 .wipiconTransform {
     height: 16px;
-    width: 16px;    
+    width: 16px;
 }
 
 #designicon {
