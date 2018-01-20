@@ -39,9 +39,7 @@ headerText {
     margin-right: 10px;
 }
 
-.titlerow {
-    min-height: 90%;
-    opacity: 1;
+.titlerow {    
 }
 
 .titleCard {
@@ -122,7 +120,7 @@ h5{
 }
 
 .pageFooter {
-    min-height: 500px;
+    
     color: #ffffff;
 }
 
@@ -136,8 +134,6 @@ h5{
 }
 
 .headeraffix {
-    
-
     position: sticky;
 }
 
@@ -146,15 +142,9 @@ h5{
     min-height: 133px;
 }
 
-.skillRow {
-    margin-top: 3%;
-
-    color: #ffffff;
-}
 
 .skillFooter {
     text-align: center;
-
     color: #ffffff;
 }
 
@@ -229,7 +219,7 @@ body.modal-open div.modal-backdrop {
 
 @media (min-width: 1200px) {
     .titlerow {
-        min-height: 425px;
+        
         margin-left: 0;
         margin-right: 0;
     }
