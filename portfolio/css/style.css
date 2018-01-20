@@ -34,12 +34,17 @@ headerText {
 
 }
 
+.titlerow{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 .headeraffix img {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.titlerow {    
+.titleCarousel{
+    margin: 10px;
 }
 
 .titleCard {
@@ -57,14 +62,14 @@ h5{
 }
 
 ​ .carouselImage{
+    padding: 10px;
     max-height: 200px !important;
     max-width: 200px !important;
 }
 
 .contentRow {
-    margin-bottom: 10px;
-    min-height: 500px;
-    max-height: 350px;
+    margin-bottom: 50px;
+    
 }
 .contentCardContainer{
     min-height: 1000px;
@@ -111,7 +116,7 @@ h5{
 }
 
 .testimonialMods{
-    max-height: 300px;
+    
 }
 
 .contactEmbed{
@@ -145,13 +150,10 @@ h5{
 
 .skillFooter {
     text-align: center;
-    color: #ffffff;
+    color: #ffffff;   
 }
 
-.skillFooterAnim {
-    animation-delay: 2s;
-    padding-bottom: 10px;
-}
+
 
 .skill {
     height: inherit;
@@ -195,6 +197,10 @@ h5{
     margin-top: 5px;
     height: 50px;
     animation-delay: 1.5s;
+}
+#projects{
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 #u4e iframe {
