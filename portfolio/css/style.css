@@ -2,7 +2,7 @@ body {
     position: relative;
     margin-right: 0;
     margin-left: 0;
-    
+
     color: white;
     background-color: #f5f5f5;
 }
@@ -30,8 +30,8 @@ body {
 
 headerText {
     color: white;
-    
-    
+
+
 }
 
 .headeraffix img {
@@ -78,7 +78,7 @@ h5{
     background-color: inherit;
     padding: 10px;
     min-height: 500px;
-    max-height: 350px;
+    max-height: 500px;
     margin: 10px;
 }
 
@@ -91,6 +91,10 @@ h5{
         font-size: 16px !important;
     }
 
+.anchoredImg{
+  max-width: 150px;
+  max-height: 150px;
+}
 
 .u4ecard {
     min-height: 350px;
@@ -132,7 +136,7 @@ h5{
 }
 
 .headeraffix {
-    height: 20%;
+    
 
     position: sticky;
 }
