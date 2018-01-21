@@ -3,9 +3,13 @@
     "",
     "\\portfolio",
     "\\portfolio\\Assets",
-    "\\portfolio\\CSS",
-    "\\portfolio\\Scripts"
+    "\\portfolio\\css",
+    "\\portfolio\\js",
+    "\\portfolio\\js\\modules (optional)",
+    "\\portfolio\\sass",
+    "\\portfolio\\sass\\mdb\\free",
+    "\\portfolio\\sass\\mdb\\pro"
   ],
-  "SelectedNode": "\\portfolio\\Assets\\davidscott.jpg",
+  "SelectedNode": "\\portfolio\\Assets\\jlyleresume.pdf",
   "PreviewInSolutionExplorer": false
 }
