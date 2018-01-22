@@ -1,11 +1,14 @@
 $(document).ready(function () {
 
+
+    //Dumps video data on modal close to prevent sticking across modals
     $("#u4emodal").on('hidden.bs.modal', function (e) {
         $("#u4emodal iframe").attr("src", $("#u4emodal iframe").attr("src"));
     });
 
     $("#dkmodal").on('hidden.bs.modal', function (e) {
-        $("#dkmodal iframe").attr("src", $("#dkmodal iframe").attr("src"));
+        $("#dkvid1 iframe").attr("src", $("#dkvid1 iframe").attr("src"));
+        $("#dkvid2 iframe").attr("src", $("#dkvid2 iframe").attr("src"));
     });
 
     $("#tstomodal").on('hidden.bs.modal', function (e) {

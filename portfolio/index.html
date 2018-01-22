@@ -149,7 +149,7 @@
                         </div>
                         <!--opens in modal-->
                         <div class="row justify-content-center">
-                            <button data-toggle="modal" data-target="#u4emodal" type="button" class="btn btn-secondary btn-rounded col-4">Read More</button>
+                            <button data-toggle="modal" data-target="#u4emodal" type="button" class="btn btn-secondary btn-rounded col-4">View Project</button>
                         </div>
                     </div>
 
@@ -163,7 +163,7 @@
                             <p class="card-text contentCardOverride">I was first exposed to the Unity platform while working on one of my favorite games. Dungeon Keeper was re-released on GOG.com in 2011. My main responsibilities were to lead small teams while coordinating between the art and engineering departments on implementing new features and refining the UI design. I designed wireframes and built monetary game systems.</p>
                         </div>
                         <div class="row justify-content-center">
-                            <button data-toggle="modal" data-target="#dkmodal" type="button" class="btn btn-secondary btn-rounded col-4">Read More</button>
+                            <button data-toggle="modal" data-target="#dkmodal" type="button" class="btn btn-secondary btn-rounded col-4">View Project</button>
                         </div>
                     </div>
                 </div>
@@ -175,11 +175,10 @@
                         </div>
                         <div id="testimonialsTarg" class="card-body">
                             <h2 class="card-title contentCardOverride">The Simpsons Tapped Out</h2>
-                            <p class="card-text contentCardOverride">
-                                A city-building, freemium mobile game, Simpson’s Tapped Out is entirely addicting. As a scripter, I implemented designs using XML scripting, xcode, and perforce while deploying patches and updates in a live, real-time environment. I tracked and managed project progress with JIRA.</p>
+                            <p class="card-text contentCardOverride">A city-building, freemium mobile game, Simpson’s Tapped Out is entirely addicting. As a scripter, I implemented designs using XML scripting, xcode, and perforce while deploying patches and updates in a live, real-time environment. I tracked and managed project progress with JIRA.</p>
                         </div>
                         <div class="row justify-content-center">
-                            <button data-toggle="modal" data-target="#tstomodal" type="button" class="btn btn-secondary btn-rounded col-4">Read More</button>
+                            <button data-toggle="modal" data-target="#tstomodal" type="button" class="btn btn-secondary btn-rounded col-4">View Project</button>
                         </div>
                     </div>
                 </div>
@@ -354,7 +353,7 @@
     <script type="text/javascript" src="./js/webscripts.js"></script>
 
     <div class="modal fade" id="u4emodal" tabindex="-1" role="dialog" aria-labelledby="u4emodal" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-md" role="document">
 
             <!--Content-->
             <div class="modal-content">
@@ -386,8 +385,8 @@
     </div>
     <!--Modal: modalYT-->
 
-    <div class="modal fade" id="dkmodal" tabindex="-1" role="dialog" aria-labelledby="dkmodal" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+    <div class="clearfix modal fade" id="dkmodal" tabindex="-1" role="dialog" aria-labelledby="dkmodal" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
 
             <!--Content-->
             <div class="modal-content">
@@ -396,35 +395,36 @@
                 <div class="modal-body mb-0 p-0">
 
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                        <iframe id="dkvid1" class="clearfix embed-responsive-item" src="https://www.youtube.com/embed/c21dF3itVFc?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        <iframe id="dkvid1" class="embed-responsive-item" src="https://www.youtube.com/embed/c21dF3itVFc?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                     </div>
 
-                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                        <iframe id="dkvid2" class="embed-responsive-item" src="https://www.youtube.com/embed/bqF_jIVBlzU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <div class="clearfix embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe id="dkvid2" class="clearfix embed-responsive-item" src="https://www.youtube.com/embed/bqF_jIVBlzU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                     </div>
 
                     <!--Footer-->
                     <div class="modal-footer justify-content-center container-fluid">
-
                         <div class="row">
-                            <div class="col-3">
+                            <div style="padding:10px;" class="col-12 black-text">
+                                <p>I was responsible for designing and implementing Dungeon Keeper's Dynamic Quest System.</p>
 
                             </div>
                         </div>
 
-                        <button type="button" style="width:250px;" class="btn btn-secondary accent-2 btn-rounded" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
                 <!--/.Content-->
-
+                <div class="row justify-content-center">
+                    <button type="button" style="width:250px;" class="btn btn-secondary accent-2 btn-rounded" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
     <!--Modal: modalYT-->
 
     <div class="modal fade" id="tstomodal" tabindex="-1" role="dialog" aria-labelledby="tstomodal" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-md" role="document">
 
             <!--Content-->
             <div class="modal-content">
