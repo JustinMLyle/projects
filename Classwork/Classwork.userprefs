@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{F8B8CB06-2DBA-462B-8BEA-6AA7BD6B5975}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Classwork/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../ResumeShredder/ResumeShredder.html">
     <Files>
-      <File FileName="Classwork/Program.cs" Line="1" Column="1" />
+      <File FileName="Classwork/Program.cs" Line="11" Column="69" />
+      <File FileName="../ResumeShredder/script/gamescripts.js" Line="1" Column="1" />
+      <File FileName="../ResumeShredder/ResumeShredder.html" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
