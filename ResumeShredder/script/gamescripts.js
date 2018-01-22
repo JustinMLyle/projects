@@ -8,7 +8,7 @@ var tickRate = 1000;
 //Document destruction Solutions Variables
 var numShredders = 0;
 var numIndustrials = 0;
-var numDumpsters = 0;
+var numDumpsterFires = 0;
 var numPaperPlants = 0;
 var numRockets = 0;
 var numPortals = 0;
@@ -32,17 +32,14 @@ var shredderUpgradeInitial = 80;
 var shredderUpgradeMultiplier = 1.25;
 var industrialUpgradeInitial = 666.66;
 var industrialUpgradeMultiplier = 1.5;
-var dumpsterUpgradeInitial = 2500;
-var dumpsterUpgradeMultiplier = 2;
+var dumpsterFireUpgradeInitial = 5000;
+var dumpsterFireUpgradeMultiplier = 2;
 var paperPlantUpgradeInitial = 25000;
 var paperPlantUpgradeMultiplier = 3;
 var rocketUpgradeInitial = 50000;
 var rocketUpgradeMultiplier = 4;
 var portalUpgradeInitial = 100000;
 var portalUpgradeMultiplier = 5;
-
-
-
 
 //clicker function
 $("#clicker").click(function(){
@@ -71,38 +68,52 @@ $(document).ready(function(){
 
 //Document Destruction shredderSolutions
 $("#shredderSM").click(function(){
-  upgradeItem(shredderUpgradeInitial, shredderUpgradeMultiplier, numShredders, shredderEffcacy, $(numShreddersElement), $(shredderCostElement));
-});
-
-$("#shredderLG").click(function(){
-  upgradeItem(industrialUpgradeInitial, industrialUpgradeMultiplier, numIndustrials, industrialEffcacy, numIndustrialsElement, industrialCostElement);
-});
-$("#dumpster").click(function(){
-  upgradeItem(dumpsterUpgradeInitial, dumpsterUpgradeMultiplier, numDumpsters, dumpsterEffcacy, numDumpstersElement, dumpsterCostElement);
-});
-
-function upgradeItem(initial, multiplier, numItems,  effcacy, itemID, itemCostID){
-  if (gameScore >= initial*multiplier){
+  if (gameScore >= shredderUpgradeInitial*shredderUpgradeMultiplier){
     //subtract the score for upgrading
-    gameScore = gameScore-(initial*multiplier).toFixed(0);
+    gameScore = gameScore-(shredderUpgradeInitial*shredderUpgradeMultiplier).toFixed(0);
 
     //update the price to reflect next level
-    (initial = initial*multiplier).toFixed(0);
+    (shredderUpgradeInitial = shredderUpgradeInitial*shredderUpgradeMultiplier).toFixed(0);
 
-    numItems++;
+    numShredders++;
     //save a temporary new upgrade value
-    var newUpgrade = numItems * effcacy;
+    var newUpgrade = numShredders * shredderEffcacy;
     //add that to the scorePerTick
     scorePerTick = scorePerTick + newUpgrade;
 
-    //calculate a new item cost
-    var newCost = (initial*multiplier).toFixed(0);
-    numItems++
+    //calculate a new shredder cost
+    var newShredderCost = (shredderUpgradeInitial*shredderUpgradeMultiplier).toFixed(0);
+
+    console.log('new score per tick: ' + scorePerTick);
+    $('#scoreboard').html('Score: '+gameScore);
+    $('#numShredders').html(numShredders);
+    $('#shredderCost').html(('-')+newShredderCost);
+  }
+    numShredders = numShredders++;
+});
+
+$("#shredderLG").click(function(){
+  if (gameScore >= industrialUpgradeInitial*industrialUpgradeMultiplier){
+    //subtract the score for upgrading
+    gameScore = gameScore-(industrialUpgradeInitial*industrialUpgradeMultiplier).toFixed(0);
+
+    //update the price to reflect next level
+    (industrialUpgradeInitial = industrialUpgradeInitial*industrialUpgradeMultiplier).toFixed(0);
+
+    numIndustrials++;
+    //save a temporary new upgrade value
+    var newUpgrade = numIndustrials * industrialEffcacy;
+    //add that to the scorePerTick
+    scorePerTick = scorePerTick + newUpgrade;
+
+    //calculate a new industrial cost
+    var newIndustrialCost = (industrialUpgradeInitial*industrialUpgradeMultiplier).toFixed(0);
+
     console.log('new score per tick: ' + scorePerTick);
     //update economy text
     $('#scoreboard').html('Score: '+gameScore);
-    document.getElementById("itemID").+numItems;
-    document.getElementById("itemCostID").(('-')+newCost);
+    $('#numIndustrials').html(numIndustrials);
+    $('#industrialCost').html(('-')+newIndustrialCost);
   }
-    numItems = numItems++;
-};
+    numIndustrials = numIndustrials++;
+});
