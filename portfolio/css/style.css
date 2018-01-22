@@ -43,6 +43,11 @@ headerText {
     margin-right: 10px;
 }
 
+#openingCarousel{
+    max-height: 400px;
+    max-width: 400px;
+}
+
 .titleCarousel{
     margin: 10px;
 }
