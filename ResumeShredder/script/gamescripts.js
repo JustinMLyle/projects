@@ -1,6 +1,6 @@
 //Core Variables
 var totalScore = 1;
-var gameScore = 1;
+var gameScore = 10000000;
 var clickMultiplier = 100;
 var scorePerTick = 1;
 var tickRate = 1000;
@@ -32,13 +32,13 @@ var shredderUpgradeInitial = 80;
 var shredderUpgradeMultiplier = 1.25;
 var industrialUpgradeInitial = 666.66;
 var industrialUpgradeMultiplier = 1.5;
-var dumpsterFireUpgradeInitial = 5000;
+var dumpsterFireUpgradeInitial = 2500;
 var dumpsterFireUpgradeMultiplier = 2;
-var paperPlantUpgradeInitial = 25000;
+var paperPlantUpgradeInitial = 8333.33;
 var paperPlantUpgradeMultiplier = 3;
-var rocketUpgradeInitial = 50000;
+var rocketUpgradeInitial = 12500;
 var rocketUpgradeMultiplier = 4;
-var portalUpgradeInitial = 100000;
+var portalUpgradeInitial = 20000;
 var portalUpgradeMultiplier = 5;
 
 //clicker function
@@ -86,7 +86,7 @@ $("#shredderSM").click(function(){
 
     console.log('new score per tick: ' + scorePerTick);
     $('#scoreboard').html('Score: '+gameScore);
-    $('#numShredders').html(numShredders);
+    $('#numShreddersElement').html(+numShredders);
     $('#shredderCost').html(('-')+newShredderCost);
   }
     numShredders = numShredders++;
@@ -112,8 +112,69 @@ $("#shredderLG").click(function(){
     console.log('new score per tick: ' + scorePerTick);
     //update economy text
     $('#scoreboard').html('Score: '+gameScore);
-    $('#numIndustrials').html(numIndustrials);
-    $('#industrialCost').html(('-')+newIndustrialCost);
+    $('#numIndustrialsElement').html(numIndustrials);
+    $('#industrialCostElement').html(('-')+newIndustrialCost);
   }
     numIndustrials = numIndustrials++;
 });
+
+$("#dumpster").click(function(){
+    console.log('clicked');
+  if (gameScore >= dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier){
+    //subtract the score for upgrading
+    gameScore = gameScore-(dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+
+    //update the price to reflect next level
+    (dumpsterFireUpgradeInitial = dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+
+    numDumpsterFires++;
+    console.log(numDumpsterFires);
+    //save a temporary new upgrade value
+    var newUpgrade = numDumpsterFires * dumpsterEffcacy;
+    //add that to the scorePerTick
+    scorePerTick = scorePerTick + newUpgrade;
+
+    //calculate a new industrial cost
+    var newDumpsterCost = (dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+    console.log(newDumpsterCost);
+    console.log('new score per tick: ' + scorePerTick);
+    //update economy text
+    $('#scoreboard').html('Score: '+gameScore);
+    $('#numDumpstersElement').html(numDumpsterFires);
+    console.log('num element updated');
+    $('#dumpsterCostElement').html(('-')+newDumpsterCost);
+    console.log('cost element updated');
+  }
+    numIndustrials = numIndustrials++;
+});
+
+$("#dumpster").click(function(){
+    console.log('clicked');
+  if (gameScore >= dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier){
+    //subtract the score for upgrading
+    gameScore = gameScore-(dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+
+    //update the price to reflect next level
+    (dumpsterFireUpgradeInitial = dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+
+    numDumpsterFires++;
+    console.log(numDumpsterFires);
+    //save a temporary new upgrade value
+    var newUpgrade = numDumpsterFires * dumpsterEffcacy;
+    //add that to the scorePerTick
+    scorePerTick = scorePerTick + newUpgrade;
+
+    //calculate a new industrial cost
+    var newDumpsterCost = (dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+    console.log(newDumpsterCost);
+    console.log('new score per tick: ' + scorePerTick);
+    //update economy text
+    $('#scoreboard').html('Score: '+gameScore);
+    $('#numDumpstersElement').html(numDumpsterFires);
+    console.log('num element updated');
+    $('#dumpsterCostElement').html(('-')+newDumpsterCost);
+    console.log('cost element updated');
+  }
+    numIndustrials = numIndustrials++;
+});
+
