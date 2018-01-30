@@ -2,22 +2,28 @@
 
 namespace Classwork
 {
-    class MainClass
-    {
-        public static void Main(string[] args)
+    public class getCardType
+    {        
+        string[] card = { "A", "1", "2", "3", "4", "5", "6", "7", "9", "10", "J", "Q", "K" };
 
+        public static void cardDraw(string[] args)
         {
-            int yards = 0;
-            Console.WriteLine("How many Yards do you want to convert?");
-            string yardInput = Console.ReadLine();
-            int.TryParse(yardInput, out yards);
-            yards = yards * 36;
+            Random rnd = new Random();
+            int Value = rnd.Next(0, 13);
 
-
-            Console.WriteLine(yardInput + " yards is equal to " + yards + " inches");
-
-
+            Console.WriteLine(Value);
+            Console.ReadLine();
 
         }
     }
+
+    public class dealer
+    {
+       
+        
+    }
+
+   
+
+
 }

@@ -3,3 +3,7 @@
 /Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/obj/x86/Debug/Classwork.csproj.CoreCompileInputs.cache
 /Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/obj/x86/Debug/Classwork.exe
 /Users/justinlyle/Documents/GitHub/projects/Classwork/Classwork/obj/x86/Debug/Classwork.pdb
+C:\Users\Ennkay\Documents\Web\Projects\projects\Classwork\Classwork\obj\x86\Debug\Classwork.csprojResolveAssemblyReference.cache
+C:\Users\Ennkay\Documents\Web\Projects\projects\Classwork\Classwork\obj\x86\Debug\Classwork.csproj.CoreCompileInputs.cache
+C:\Users\Ennkay\Documents\Web\Projects\projects\Classwork\Classwork\obj\x86\Debug\Classwork.exe
+C:\Users\Ennkay\Documents\Web\Projects\projects\Classwork\Classwork\obj\x86\Debug\Classwork.pdb
