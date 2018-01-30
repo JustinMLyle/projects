@@ -1,0 +1,11 @@
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\BlackJack.deps.json
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\BlackJack.runtimeconfig.json
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\BlackJack.runtimeconfig.dev.json
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\BlackJack.dll
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\BlackJack.pdb
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\BlackJack.csproj.CoreCompileInputs.cache
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\BlackJack.AssemblyInfoInputs.cache
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\BlackJack.AssemblyInfo.cs
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\BlackJack.dll
+C:\Users\Ennkay\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\BlackJack.pdb
