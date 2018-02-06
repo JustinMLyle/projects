@@ -15,7 +15,11 @@ $(document).ready(function () {
         $("#tstomodal iframe").attr("src", $("#tstomodal iframe").attr("src"));
     });
 
-    
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113718468-1');
 
 
 
