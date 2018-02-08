@@ -1,0 +1,11 @@
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\checpoint1app.deps.json
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\checpoint1app.runtimeconfig.json
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\checpoint1app.runtimeconfig.dev.json
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\checpoint1app.dll
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\checpoint1app.pdb
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\checpoint1app.csprojResolveAssemblyReference.cache
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\checpoint1app.csproj.CoreCompileInputs.cache
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\checpoint1app.AssemblyInfoInputs.cache
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\checpoint1app.AssemblyInfo.cs
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\checpoint1app.dll
+C:\Users\Ennkay\Documents\Web\Projects\projects\checkpoint1\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\checpoint1app.pdb
