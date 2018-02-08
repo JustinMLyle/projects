@@ -163,7 +163,7 @@ namespace checkpoint1app
 
         public static void guess() 
         {
-            Console.WriteLine("The Secret Number Was " + secretNum);
+            //Get inputs
             Console.WriteLine("Pick a number between 1 and 10: ");
             string userEntry = Console.ReadLine();
             guess1 = Convert.ToInt32(userEntry);
@@ -180,6 +180,7 @@ namespace checkpoint1app
             guess4 = Convert.ToInt32(userEntry);
             userEntry = Console.ReadLine();
 
+            //print results
             if (guess1 == secretNum)
             {
 
@@ -235,7 +236,7 @@ namespace checkpoint1app
             Console.WriteLine("Enter numbers separated by a comma to find the max value");
             string userEntry = Console.ReadLine();
             
-            maxList.AddRange(userEntry.Split(',').Select(i => int.Parse(i)));
+            maxList.AddRange(userEntry.Split(',').Select(i => int.Parse(i))); //add every number to the list separated by a comma
 
             int result = maxList.Max();
 
