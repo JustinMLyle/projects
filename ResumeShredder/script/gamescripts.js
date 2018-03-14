@@ -1,7 +1,7 @@
 //Core Variables
 var totalScore = 1;
-var gameScore = 10000000;
-var clickMultiplier = 100;
+var gameScore = 1;
+var clickMultiplier = 1;
 var scorePerTick = 1;
 var tickRate = 1000;
 
@@ -86,8 +86,8 @@ $("#shredderSM").click(function(){
 
     console.log('new score per tick: ' + scorePerTick);
     $('#scoreboard').html('Score: '+gameScore);
-    $('#numShreddersElement').html(+numShredders);
-    $('#shredderCost').html(('-')+newShredderCost);
+    $('#numShreddersElement').html(numShredders);
+    $('#shredderCostElement').html("-" + newShredderCost);
   }
     numShredders = numShredders++;
 });
@@ -113,10 +113,11 @@ $("#shredderLG").click(function(){
     //update economy text
     $('#scoreboard').html('Score: '+gameScore);
     $('#numIndustrialsElement').html(numIndustrials);
-    $('#industrialCostElement').html(('-')+newIndustrialCost);
+    $('#industrialCostElement').html("-" + newIndustrialCost);
   }
     numIndustrials = numIndustrials++;
 });
+
 
 $("#dumpster").click(function(){
     console.log('clicked');
@@ -142,39 +143,99 @@ $("#dumpster").click(function(){
     $('#scoreboard').html('Score: '+gameScore);
     $('#numDumpstersElement').html(numDumpsterFires);
     console.log('num element updated');
-    $('#dumpsterCostElement').html(('-')+newDumpsterCost);
+    $('#dumpsterCostElement').html("-"+newDumpsterCost);
     console.log('cost element updated');
   }
-    numIndustrials = numIndustrials++;
+    numDumpsterFires = numDumpsterFires++;
 });
 
-$("#dumpster").click(function(){
+$("#paperPlant").click(function () {
     console.log('clicked');
-  if (gameScore >= dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier){
-    //subtract the score for upgrading
-    gameScore = gameScore-(dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+    if (gameScore >= paperPlantUpgradeInitial * paperPlantUpgradeMultiplier) {
+        //subtract the score for upgrading
+        gameScore = gameScore - (paperPlantUpgradeInitial * paperPlantUpgradeMultiplier).toFixed(0);
 
-    //update the price to reflect next level
-    (dumpsterFireUpgradeInitial = dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
+        //update the price to reflect next level
+        (paperPlantUpgradeInitial = paperPlantUpgradeInitial * paperPlantUpgradeMultiplier).toFixed(0);
 
-    numDumpsterFires++;
-    console.log(numDumpsterFires);
-    //save a temporary new upgrade value
-    var newUpgrade = numDumpsterFires * dumpsterEffcacy;
-    //add that to the scorePerTick
-    scorePerTick = scorePerTick + newUpgrade;
+        numPaperPlants++;
+        console.log(numPaperPlants);
+        //save a temporary new upgrade value
+        var newUpgrade = numPaperPlants * paperPlantEffcacy;
+        //add that to the scorePerTick
+        scorePerTick = scorePerTick + newUpgrade;
 
-    //calculate a new industrial cost
-    var newDumpsterCost = (dumpsterFireUpgradeInitial*dumpsterFireUpgradeMultiplier).toFixed(0);
-    console.log(newDumpsterCost);
-    console.log('new score per tick: ' + scorePerTick);
-    //update economy text
-    $('#scoreboard').html('Score: '+gameScore);
-    $('#numDumpstersElement').html(numDumpsterFires);
-    console.log('num element updated');
-    $('#dumpsterCostElement').html(('-')+newDumpsterCost);
-    console.log('cost element updated');
-  }
-    numIndustrials = numIndustrials++;
+        //calculate a new industrial cost
+        var newPaperPlantCost = (paperPlantUpgradeInitial * paperPlantUpgradeMultiplier).toFixed(0);
+        console.log(newPaperPlantCost);
+        console.log('new score per tick: ' + scorePerTick);
+        //update economy text
+        $('#scoreboard').html('Score: ' + gameScore);
+        $('#numPaperElement').html(numPaperPlants);
+        console.log('num element updated');
+        $('#paperCostElement').html("-" + newPaperPlantCost);
+        console.log('cost element updated');
+    }
+    numPaperPlants = numPaperPlants++;
 });
 
+$("#rocket").click(function () {
+    console.log('clicked');
+    if (gameScore >= rocketUpgradeInitial * rocketUpgradeMultiplier) {
+        //subtract the score for upgrading
+        gameScore = gameScore - (rocketUpgradeInitial * rocketUpgradeMultiplier).toFixed(0);
+
+        //update the price to reflect next level
+        (rocketUpgradeInitial = rocketUpgradeInitial * rocketUpgradeMultiplier).toFixed(0);
+
+        numRockets++;
+        console.log(numRockets);
+        //save a temporary new upgrade value
+        var newUpgrade = numRockets * rocketEffcacy;
+        //add that to the scorePerTick
+        scorePerTick = scorePerTick + newUpgrade;
+
+        //calculate a new industrial cost
+        var newRocketCost = (rocketUpgradeInitial * rocketUpgradeMultiplier).toFixed(0);
+        console.log(newRocketCost);
+        console.log('new score per tick: ' + scorePerTick);
+        //update economy text
+        $('#scoreboard').html('Score: ' + gameScore);
+        $('#numRocketsElement').html(numRockets);
+        console.log('num element updated');
+        $('#rocketCostElement').html("-" + newRocketCost);
+        console.log('cost element updated');
+    }
+    numRockets = numRockets++;
+});
+
+$("#portal").click(function () {
+    console.log('clicked');
+    if (gameScore >= portalUpgradeInitial * portalUpgradeMultiplier) {
+        //subtract the score for upgrading
+        gameScore = gameScore - (portalUpgradeInitial * portalUpgradeMultiplier).toFixed(0);
+
+        //update the price to reflect next level
+        (portalUpgradeInitial = portalUpgradeInitial * portalUpgradeMultiplier).toFixed(0);
+
+        numPortals++;
+        console.log(numPortals);
+        //save a temporary new upgrade value
+        var newUpgrade = numPortals * portalEffcacy;
+        //add that to the scorePerTick
+        scorePerTick = scorePerTick + newUpgrade;
+        console.log('ticked updated');
+        //calculate a new industrial cost
+        var newPortalCost = (portalUpgradeInitial * portalUpgradeMultiplier).toFixed(0);
+        console.log(newPortalCost);
+        console.log('new score per tick: ' + scorePerTick);
+        
+        //update economy text
+        $('#scoreboard').html('Score: ' + gameScore);
+        $('#numPortalElement').html(numPortals);
+        console.log('num element updated');
+        $('#portalCostElement').html("-" + newPortalCost);
+        console.log('cost element updated');
+    }
+    numPortals = numPortals++;
+});
