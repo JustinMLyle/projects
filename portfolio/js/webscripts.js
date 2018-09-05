@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  new WOW().init();
 
     //Dumps video data on modal close to prevent sticking across modals
     $("#u4emodal").on('hidden.bs.modal', function (e) {
